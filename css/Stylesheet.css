@@ -4,6 +4,24 @@
     box-sizing: border-box;
 }
 
+.phone {
+    display: none;
+}
+
+.deskop {
+    display: block;
+}
+
+
+/* 
+
+
+>*  ---selecteerd alle elementen binnen het soot element dat ervoor staat
+
+flex: 1: ---maakt alle elementen binnen een flex display de zelfde groten je moet daarvoor >* gebruiken
+
+*/
+
 :root {
     --PurpleViolet: #c724e7;
 }
@@ -45,7 +63,7 @@ header nav a {
 
 .Neon {
     display: block;
-    font-family: "Tilt Neon", sans-serif;
+    font-family: "Orbitron", sans-serif;
 
 }
 
@@ -124,7 +142,7 @@ footer {
     align-items: center;
     row-gap: 50px;
     width: 100%;
-    padding-right: 20px;
+    padding-right: 1rem;
 }
 
 
@@ -191,6 +209,7 @@ main,
 
 
 
+
 .Slogan {
     padding-top: 2.5%;
     display: flex;
@@ -211,8 +230,8 @@ ul {
 
 
 .PlainImage {
-    width: 300px;
-    height: 300px;
+    width: 50%;
+    height: 50%;
 }
 
 .NeonImage {
@@ -221,12 +240,13 @@ ul {
     padding-right: 1%;
 }
 
-.GreenNeonBorder{
+.GreenNeonBorder {
     border: 3px rgb(139, 255, 148) solid;
     box-shadow: 0 0 8px rgba(35, 211, 50, 0.815);
     border-radius: 15px;
 
 }
+
 .StoreFrontImg {
     width: 90%;
     height: 100%;
@@ -251,19 +271,167 @@ ul {
     margin-right: 10%;
 }
 
+
+
 .TextSection {
     display: flex;
     flex-direction: column;
 }
-.TextSection >*{
+
+.TextSection>* {
     flex: 1;
 
 
 }
 
-.Column img {
-    margin-right: 2%;
-    padding: 20px;
-    height: 250px;
-    width: 24%;
+.ProductFrame {
+    position: relative;
+    width: 175px;
+    height: 175px;
+    margin-right: 10px;
+}
+
+.ProductFrame img {
+    width: 175px;
+    height: 175px;
+    display: block;
+    object-fit: cover;
+}
+
+@media (max-width: 867px) {
+    .Column {
+        margin: 0 auto;
+        margin-left: 4% ;
+        margin-right: 4%;
+        margin-bottom: 2%;
+        border-radius: 15px;
+        background-color: rgb(53, 51, 51);
+        display: flex;
+        justify-content: left;
+       
+    }
+
+    .ProductFrame .phone {
+        display: block;
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+       
+        width: 90%;
+        text-align: center;
+ 
+    }
+
+    .ProductFrame img {
+        padding-bottom: 30px;
+    }
+
+    .deskop {
+        display: none;
+    }
+
+    header {
+        height: 70px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    header nav a {
+        font-size: 20px;
+    }
+
+    header nav img {
+        height: 50px;
+    }
+
+    .green h1 {
+        font-size: 30px;
+    }
+
+    .red h1 {
+        font-size: 23px;
+    }
+
+    .RedGreenNeonText {
+        margin-bottom: 6%;
+    }
+
+    .Section {
+        display: block;
+        height: 20%;
+        width: 80%;
+    }
+
+    .PlainImage {
+        width: 70%;
+        height: 70%;
+    }
+
+    .PwithT {
+        margin-bottom: 7%;
+        row-gap: 15px;
+    }
+
+    .YapText {
+        display: contents;
+    }
+
+    .wrapperForRow {
+
+        display: flex;
+        flex-direction: column;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .PhotoPlace img {
+        margin: 0 auto;
+
+    }
+
+    .PhotoPlace {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    /* mobile stuff ordered for overons page */
+    .MobileTop1 {
+        order: 1;
+    }
+
+    .MobileTop2 {
+        order: 2;
+        margin-bottom: 20px;
+    }
+
+    .MobileTop3 {
+        order: 3;
+    }
+
+    .MobileTop4 {
+        order: 4;
+    }
+
+    .MobileTop5 {
+        order: 5;
+    }
+
+
+    .PoductFrame img {
+        margin-right: 2%;
+        padding: 20px;
+        height: 135px;
+        width: 30%;
+    }
+
+    .TextSection {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
 }
