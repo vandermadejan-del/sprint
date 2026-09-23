@@ -4,6 +4,21 @@
     box-sizing: border-box;
 }
 
+/* tab geselecteerde elementen toets design */
+*:focus-visible{
+    outline: none;
+    
+}
+*:focus-visible, a:hover{
+    transition-duration: 1s;
+    outline-offset: 2px;
+    border: 2px rgb(248, 102, 76) double;
+    box-shadow: 0 0 8px red
+}
+
+
+
+
 .phone {
     display: none;
 }
@@ -29,6 +44,8 @@ flex: 1: ---maakt alle elementen binnen een flex display de zelfde groten je moe
 header {
     justify-content: center;
     background-color: rgb(71, 71, 71);
+    top: 0;
+    position: sticky;
 }
 
 header img {
@@ -61,7 +78,8 @@ header nav a {
 }
 
 
-.Neon {
+.Neon,
+.nieuwsbrief-button {
     display: block;
     font-family: "Orbitron", sans-serif;
 
@@ -298,17 +316,79 @@ ul {
     object-fit: cover;
 }
 
+.nieuws-brief {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    width: 500px;
+    margin-bottom: 10%;
+}
+
+
+.nieuwsbrief-button {
+    height: 50%;
+    width: 50%;
+    background-color: #000000f6;
+    border: 2px rgb(248, 102, 76) double;
+    border-radius: 9px;
+    color: white;
+    text-shadow:
+        0 0 1px #fc0909,
+        0 0 4px #fc0909,
+        0 0 7px #fc0909,
+        0 0 7px #fc0909;
+    font-size: 26px;
+    box-shadow: 0 0 8px red;
+}
+
+.nieuwsbrief-button:hover {
+
+    color: black;
+}
+
+.map {
+    width: 440px;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #3a3a3af6;
+    border: 3px #bcffa2 solid;
+    box-shadow: 0 0 3px 3px rgb(38, 226, 21);
+    border-radius: 10px;
+}
+
+.map h2 {
+    text-align: center;
+    margin-bottom: 10%;
+    font-size: 2rem;
+}
+
+.map iframe {
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 60%;
+    border: 7px #000000 solid;
+    box-shadow: 0px 0px 3px 3px #000000b9;
+    border-radius: 10px;
+
+}
+
 @media (max-width: 867px) {
     .Column {
         margin: 0 auto;
-        margin-left: 4% ;
+        margin-left: 4%;
         margin-right: 4%;
         margin-bottom: 2%;
         border-radius: 15px;
         background-color: rgb(53, 51, 51);
         display: flex;
         justify-content: left;
-       
+
     }
 
     .ProductFrame .phone {
@@ -317,10 +397,10 @@ ul {
         top: 85%;
         left: 50%;
         transform: translate(-50%, -50%);
-       
+
         width: 90%;
         text-align: center;
- 
+
     }
 
     .ProductFrame img {
@@ -433,5 +513,36 @@ ul {
         display: flex;
         flex-direction: column;
         gap: 5px;
+    }
+
+    .map {
+        width: 80%;
+        ;
+        height: 250px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #3a3a3af6;
+        border: 3px #bcffa2 solid;
+        box-shadow: 0 0 3px 3px rgb(38, 226, 21);
+        border-radius: 10px;
+    }
+
+    .nieuws-brief {
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        width: 80%;
+        margin-bottom: 10%;
+    }
+
+    .nieuws-brief h2 {
+        text-align: center;
+        margin-bottom: 6%;
+
     }
 }
