@@ -45,7 +45,8 @@ header {
     justify-content: center;
     background-color: rgb(71, 71, 71);
     top: 0;
-    position: sticky;
+    position: sticky;  /* keeps header visible even when scrolling */
+    z-index: 1000;    /*prevent images or other elements from overlapping when scrolling  */
 }
 
 header img {
@@ -68,11 +69,7 @@ header nav {
 header nav a {
     font-size: 30px;
     font-family: "Nova Square", sans-serif;
-    font-weight: 400;
     font-style: normal;
-    font-variation-settings:
-        "XROT" 0,
-        "YROT" 0;
     text-decoration: none;
     color: rgb(231, 231, 231);
 }
@@ -130,10 +127,10 @@ header nav a {
 
 
 
-
 main {
     background-color: rgb(43, 42, 42);
     padding-bottom: 5%;
+
 }
 
 footer {
@@ -142,7 +139,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     flex-grow: 1;
-    background-color: black;
+    background-color: rgb(71, 71, 71);
 }
 
 .Section {
@@ -190,6 +187,8 @@ h3 {
 }
 
 main,
+
+/* alles In wrapper onderelkaar zetten */
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -214,11 +213,12 @@ main,
 .PhotoPlace {
     display: flex;
     justify-content: center;
+    margin-left: 5px;
 }
 
 .wrapperForRow img {
-    width: 70%;
-    height: 50%;
+    width: 250px;
+    height: 250px;
     border: 3px #bffac4 solid;
     box-shadow: 0px 0px 3px 3px #06ff1bb9;
     border-radius: 10px;
@@ -257,13 +257,13 @@ ul {
     height: 100%;
     padding-right: 1%;
 }
-
+/* extra class om alle's dat ik wil een neon rand te geven zonder duplicate code te maken */
 .GreenNeonBorder {
     border: 3px rgb(139, 255, 148) solid;
     box-shadow: 0 0 8px rgba(35, 211, 50, 0.815);
     border-radius: 15px;
-
 }
+
 
 .StoreFrontImg {
     width: 90%;
@@ -324,7 +324,7 @@ ul {
     align-items: center;
     height: 200px;
     width: 500px;
-    margin-bottom: 10%;
+    margin-bottom: 6%;
 }
 
 
@@ -345,13 +345,14 @@ ul {
 }
 
 .nieuwsbrief-button:hover {
-
     color: black;
 }
 
+
 .map {
-    width: 440px;
-    height: 400px;
+    width: 50%;
+    /* make height and widtht the same */
+    aspect-ratio: 1/1; 
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -364,14 +365,15 @@ ul {
 
 .map h2 {
     text-align: center;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     font-size: 2rem;
 }
 
 .map iframe {
     margin-left: 5%;
     margin-right: 5%;
-    height: 60%;
+    margin-bottom:3% ;
+    height: 80%;
     border: 7px #000000 solid;
     box-shadow: 0px 0px 3px 3px #000000b9;
     border-radius: 10px;
@@ -379,37 +381,6 @@ ul {
 }
 
 @media (max-width: 867px) {
-    .Column {
-        margin: 0 auto;
-        margin-left: 4%;
-        margin-right: 4%;
-        margin-bottom: 2%;
-        border-radius: 15px;
-        background-color: rgb(53, 51, 51);
-        display: flex;
-        justify-content: left;
-
-    }
-
-    .ProductFrame .phone {
-        display: block;
-        position: absolute;
-        top: 85%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-        width: 90%;
-        text-align: center;
-
-    }
-
-    .ProductFrame img {
-        padding-bottom: 30px;
-    }
-
-    .deskop {
-        display: none;
-    }
 
     header {
         height: 70px;
@@ -456,6 +427,7 @@ ul {
 
     .YapText {
         display: contents;
+        text-align: center;
     }
 
     .wrapperForRow {
@@ -502,32 +474,8 @@ ul {
     }
 
 
-    .PoductFrame img {
-        margin-right: 2%;
-        padding: 20px;
-        height: 135px;
-        width: 30%;
-    }
 
-    .TextSection {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-    }
 
-    .map {
-        width: 80%;
-        ;
-        height: 250px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-color: #3a3a3af6;
-        border: 3px #bcffa2 solid;
-        box-shadow: 0 0 3px 3px rgb(38, 226, 21);
-        border-radius: 10px;
-    }
 
     .nieuws-brief {
         margin-top: 2%;
@@ -545,4 +493,50 @@ ul {
         margin-bottom: 6%;
 
     }
+}
+@media (max-width: 500px) {
+        .map {
+        width: 90%;
+        height: 100%;}
+
+    .Column {
+        margin: 0 auto;
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-bottom: 9%;
+        border-radius: 15px;
+        background-color: rgb(53, 51, 51);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .ProductFrame .phone {
+        display: block;
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+        margin-right: 2%;
+        padding-bottom: 20px;
+    }
+
+    
+
+
+    .TextSection {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .deskop {
+        display: none;
+    }
+    
 }

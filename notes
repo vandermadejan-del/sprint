@@ -1,9 +1,9 @@
-9/9/2026--
-wireframe gemaakt mobiel and deskop daan gesprek gehaad plannen zijn goedgekeurd en begon aan het design van de website + footer met daans contact info,
+<!-- 9/9/2026--
+wireframe gemaakt mobiel and deskop daan gesprek gehaad mijn plannen zijn goedgekeurd en begon aan het design van de website + footer met daans contact info,
 Header,footer,main  en de linkes gemaakt + de font en kleuren schema gevonden en home page gemaakt
 
 16/9/2026--
-homepage, over ons, producten pagina's af gemaakt de neon effecten gemaakt en ht project aan github toegevoegd begon mobiele pagina design
+homepage, over ons, producten pagina's af gemaakt de neon effecten gemaakt en het project aan github toegevoegd begon mobiele pagina design, tijdens producten pagina om de layout maken lukten het, niet goed, maar ondekte display grid, werkte toch niet eigenlijk zo ging door naar flex maar wel grid geleerd, en had toch maar een extra div gemaakt om het te fixen, 
 
 18/09/2026--
 
@@ -16,5 +16,21 @@ de google map iframe toegevoegde, nieuwsbrief button en de header boven laten st
 tweede versie op github saven
 
 
+ -->
 
+ <!-- 
+ StijlGids
+
+  Header, footer: background-color: rgb(71, 71, 71);
+
+  green neon color : #2ac210
+  red neon color : #ff1414
+
+  nav a font:  nova Square
+  orange :  rgb(248, 102, 76)
+  red : red
+ inner-text of border: #bcffa2
+ button-text font: Orbitron
+ 
+  -->
 
