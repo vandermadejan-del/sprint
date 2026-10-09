@@ -1,9 +1,9 @@
 <!-- 9/9/2026--
 wireframe gemaakt mobiel and deskop daan gesprek gehaad mijn plannen zijn goedgekeurd en begon aan het design van de website + footer met daans contact info,
-Header,footer,main  en de linkes gemaakt + de font en kleuren schema gevonden en home page gemaakt
+Header,footer,main  en de linkes gemaakt + de font en kleuren schema gevonden en home page gemaakt, kon de font bij het begin niet vinden na 10 minuten zo vroeg Ai. de best passende gevonden binnen 2 minute
 
 16/9/2026--
-homepage, over ons, producten pagina's af gemaakt de neon effecten gemaakt en het project aan github toegevoegd begon mobiele pagina design, tijdens producten pagina om de layout maken lukten het, niet goed, maar ondekte display grid, werkte toch niet eigenlijk zo ging door naar flex maar wel grid geleerd, en had toch maar een extra div gemaakt om het te fixen, 
+homepage, over ons, producten pagina's af gemaakt de neon effecten gemaakt en het project aan github toegevoegd begon mobiele pagina design, tijdens producten pagina om de layout maar het lukten niet, maar ondekte display grid, werkte toch niet eigenlijk zo ging door naar flex maar wel grid geleerd, en had toch maar een extra div gemaakt om het te fixen. Ik dacht er te moeilijk over om wat extra lines van code te vermijden
 
 18/09/2026--
 
@@ -16,12 +16,34 @@ de google map iframe toegevoegde, nieuwsbrief button en de header boven laten st
 tweede versie op github saven
 
 
+25/09/2026
+site beetje voor tablet beter gemaakt
+Feedback gekregen om ongeveer 14:50
+dollar teken vervangen met euro teken, de header was anders op verschillende pagina's
+de titel font was vergeten op alle pagina's behalve home.
+de footer telefoon nummer had een copyright teken dat was fout.
+in de producten lijst vond't hij dat de text wat meer verspreidt moet worden van de randen af
+---- had de pagina's beter moeter contolleren
+alles gefixed binnen 10 minuten. 
+
+
+07-10-2026
+pagina's in php verandert. header en footer zijn nu php bestanden die worden geroept
+level1tt.breda@curio.nl om daan en joris te contacten.
+menu knop en menu lijst gemaakt
+Javascript om menu thema settings te open en dicht te doen gemaakt 
+
+09-10-2026
+Java script thema dark en light mode gemaakt. pop up nieuwsbrief met het formulier er in ook met java gemaakt.
+BedankPagina gemaakt. met de post php methode.
  -->
+
 
  <!-- 
  StijlGids
 
-  Header, footer: background-color: rgb(71, 71, 71);
+  Header, footer: background-color: rgb(71, 71, 71)
+  main: background-color: rgb(43, 42, 42)
 
   green neon color : #2ac210
   red neon color : #ff1414
@@ -31,6 +53,7 @@ tweede versie op github saven
   red : red
  inner-text of border: #bcffa2
  button-text font: Orbitron
+ 
  
   -->
 

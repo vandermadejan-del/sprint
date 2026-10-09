@@ -2,39 +2,34 @@
 <html lang="nl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Daan</title>
-    <link rel="stylesheet" href="css/Stylesheet.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <?php
+    require_once 'repeatedstructures/head.php'
+    ?>
 </head>
 
 <body>
     <header>
-        <nav>
-            <img src="Img/logo.png" alt="Logo">
-
-            <a href="index.html">Home</a>
-            <a href="OverOns.html">Over ons</a>
-            <a href="Producten.html">Producten</a>
-
-        </nav>
+        <?php
+        require_once 'repeatedstructures/header.php';
+        ?>
 
 
 
     </header>
     <main>
+        <?php
+        require_once 'repeatedstructures/menubutton.php'
+        ?>
         <div class="RedGreenNeonText">
             <div class="Neon green">
                 <h1>Over Ons</h1>
             </div>
             <div class="Neon red">
-                <h1> LevelUp HardWare</h1>
+                <h1>LevelUp HardWare</h1>
             </div>
+
         </div>
+
         <div class="wrapperForRow">
             <div class="YapText">
                 <p class="MobileTop1">Welkom bij Level up Hardware. de
@@ -45,7 +40,7 @@
                     ondernemer. hij is een g3•ner in hart
                     en nieren en een absolute
                     hardware-enthousÉsteling.</p>
-                <p class="MobileTop2"> 
+                <p class="MobileTop2">
                     RI sinds zijn tienerjaren. omringd
                     door de gloed van CRT-schermen
                     en de beat van
@@ -73,7 +68,7 @@
                     écht domineren</p>
             </div>
             <div class="PhotoPlace MobileTop4">
-                <img class = "GreenNeonBorder" src="Img/daan.jpg" alt="Dit is foto van daan">
+                <img class="GreenNeonBorder" src="Img/daan.jpg" alt="Dit is foto van daan">
             </div>
 
 
@@ -82,9 +77,9 @@
 
     </main>
     <footer>
-        <p> &copy;Daan</p>
-        <p> &copy;31 6896888888</p>
-
+        <?php
+        require_once 'repeatedstructures/footer.php'
+        ?>
     </footer>
 </body>
 

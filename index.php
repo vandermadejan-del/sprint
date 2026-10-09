@@ -2,32 +2,50 @@
 <html lang="nl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Daan</title>
-    <link rel="stylesheet" href="css/Stylesheet.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <?php
+    require_once 'repeatedstructures/head.php'
+    ?>
 </head>
 
 <body>
     <header>
-        <nav>
-            <img class="LogoImage" src="Img/logo.png" alt="Logo">
-
-            <a href="index.html">Home</a>
-            <a href="OverOns.html">Over ons</a>
-            <a href="Producten.html">Producten</a>
-
-        </nav>
+        <?php
+        require_once 'repeatedstructures/header.php';
+        ?>
 
 
 
     </header>
+
     <main>
+        <div id="popUp">
+            <h2>Inschrijf Formulier popUp</h2>
+            <div id="popupContent">
+                <form method="POST" action="data/Verwerken.php">
+                    <div>
+                        <label for="Name">Naam</label>
+                        <input type="text" id="Name" name="naam" required>
+                    </div>
+                    <div>
+                        <label for="email">email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="buttons">
+                        <button type="button" id="close">Close</button>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+
+
+
+            </div>
+
+        </div>
+
+        <?php
+        require_once 'repeatedstructures/menubutton.php'
+        ?>
+
         <div class="RedGreenNeonText">
             <div class="Neon green">
                 <h1>High end Gaming</h1>
@@ -35,7 +53,6 @@
             <div class="Neon red">
                 <h1>In Breda</h1>
             </div>
-
         </div>
         <div class="wrapper">
             <div class="Section">
@@ -80,9 +97,13 @@
         <div class="nieuws-brief">
             <h2>Schrijf
                 je in voor de nieuwsbrief</h2>
-            <button type="button" class="nieuwsbrief-button"> MELD JE AAN</button>
+            <button id="button" class="nieuwsbrief-button"> MELD JE AAN</button>
 
         </div>
+
+
+
+
 
         <div class="map">
 
@@ -91,12 +112,33 @@
         </div>
 
     </main>
-    <footer>
-        <p> &copy;Daan</p>
-        <p> &copy;31 6896888888</p>
 
+    <footer>
+        <?php
+        require_once 'repeatedstructures/footer.php'
+        ?>
     </footer>
 </body>
+<script>
+    const button = document.getElementById('button')
+    const popUp = document.getElementById('popUp')
+    const close = document.getElementById('close')
+    let open = false
+    button.addEventListener('click', () => {
+        if (open === false) {
+            popUp.style.display = 'flex';
+            open = true
+        } else {
+            popUp.style.display = 'none';
+            open = false
+        }
+    })
+    close.addEventListener('click', () => {
+        popUp.style.display = 'none';
+        open = false
+
+    })
+</script>
 
 
 </html>
