@@ -383,6 +383,10 @@ ul {
     padding-right: 1%;
 }
 
+.Catagory {
+    width: 60%;
+}
+
 .ProductList {
 
     display: flex;
@@ -410,9 +414,8 @@ ul {
 
 .TextSection>* {
     flex: 1;
-
-
 }
+
 
 .ProductFrame {
     position: relative;
@@ -426,6 +429,11 @@ ul {
     height: 175px;
     display: block;
     object-fit: cover;
+}
+
+.centerText{
+    margin-top: 30px;
+    text-align: center;
 }
 
 .nieuws-brief {
