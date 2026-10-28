@@ -221,7 +221,7 @@
                                     Pro Gaming keyboard
                                 </h2>
                                 <h3 class="deskop">€199</h3>
-                                <p>Comfortable keyboard met surround sound voor een meeslepende game-ervaring.</p>
+                                <p>Comfortable muis met surround sound voor een meeslepende game-ervaring.</p>
 
                             </div>
                         </div>
