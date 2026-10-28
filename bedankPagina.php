@@ -7,14 +7,14 @@ $naam = $_SESSION['naam'] ?? 'bezoeker';
 
 <head>
     <?php
-    require_once 'repeatedstructures/head.php'
+    include 'repeatedstructures/head.php'
     ?>
 </head>
 
 <body>
     <header>
         <?php
-        require_once 'repeatedstructures/header.php';
+        include 'repeatedstructures/header.php';
         ?>
 
 
@@ -37,7 +37,7 @@ $naam = $_SESSION['naam'] ?? 'bezoeker';
 
     <footer>
         <?php
-        require_once 'repeatedstructures/footer.php'
+        include 'repeatedstructures/footer.php'
         ?>
     </footer>
 </body>

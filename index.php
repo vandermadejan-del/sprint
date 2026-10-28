@@ -3,14 +3,14 @@
 
 <head>
     <?php
-    require_once 'repeatedstructures/head.php'
+    include 'repeatedstructures/head.php'
     ?>
 </head>
 
 <body>
     <header>
         <?php
-        require_once 'repeatedstructures/header.php';
+        include 'repeatedstructures/header.php';
         ?>
 
 
@@ -43,7 +43,7 @@
         </div>
 
         <?php
-        require_once 'repeatedstructures/menubutton.php'
+        include 'repeatedstructures/menubutton.php'
         ?>
 
         <div class="RedGreenNeonText">
@@ -115,7 +115,7 @@
 
     <footer>
         <?php
-        require_once 'repeatedstructures/footer.php'
+        include 'repeatedstructures/footer.php'
         ?>
     </footer>
 </body>
